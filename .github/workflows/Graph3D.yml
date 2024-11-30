@@ -1,50 +1,22 @@
-# Действие на GitHub для создания графика пожирающей змейки.
-name: Generate Graph3D
-
-# Период автоматического запуска действие в GitHUB.
+name: Graph3D
 on:
-  schedule:
-      # Каждые 12 часов
-    - cron: "0 */12 * * *"
-
-  # Команда позволяет вручную запустить активность.
+  # Автозапуск
+  schedule: [{cron: "0 0 * * *"}]
+  # Ручной запуск
   workflow_dispatch:
-  
-  # Команда запуска действия, когда выбираем ветку main.
-  push:
-    branches:
-    - main
+  # Запуск при переходи на ветки
+  push: {branches: ["main"]}
 
-# Последовательность запуска действий:
+# Выполнение кода  
 jobs:
-  # Сборка:
-  build:
-    # Тип устройства, на котором будет выполняться сборка
+  github-metrics:
     runs-on: ubuntu-latest
-
-    # Шаги в котором постепенно выполняется действии
-        jobs:
-          github-metrics:
-          runs-on: ubuntu-latest
-          environment: 
-            name: production
-            permissions:
-              contents: write
-          steps:
-          - uses: lowlighter/metrics@latest
-            with:
-              token: ${{ secrets.METRICS_TOKEN }}
-
-      # Создание вывода статуса о сборке
-      - name: Show build status
-        run: git status
-
-      # Перемещение сборки в ветку output_Graph3D вывода
-      - name: Push new files to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+    environment: 
+      name: production
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
         with:
           target_branch: output_Graph3D
-          build_dir: dist
-          commit_message: Update Graph3D animations
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
