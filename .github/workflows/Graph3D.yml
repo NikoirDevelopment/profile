@@ -5,7 +5,7 @@ on:
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
-  push: {branches: ["output_Graph3D"]}
+  push: {branches: ["main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -16,4 +16,5 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          target_branch: output_Graph3D
           token: ${{ secrets.METRICS_TOKEN }}
