@@ -1,5 +1,5 @@
 # Действие на GitHub для создания графика пожирающей змейки.
-name: Generate Snake
+name: Generate Graph3D
 
 # Период автоматического запуска действие в GitHUB.
 on:
@@ -48,6 +48,6 @@ jobs:
         with:
           target_branch: output_Graph3D
           build_dir: dist
-          commit_message: Update snake animations
+          commit_message: Update Graph3D animations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
