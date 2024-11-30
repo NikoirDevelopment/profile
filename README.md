@@ -60,7 +60,7 @@
 </div>
 
 <div id="headerStatistics_SnakeAnimation" align="center">
-  <img src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output_SnakeAnimation/github-contribution-grid-snake.svg"/>
 </div>
 
 ----------
