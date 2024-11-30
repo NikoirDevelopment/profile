@@ -9,7 +9,7 @@ on:
     branches:
     - main
  
-# Выполнение кода  
+# Выполнение кода 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
