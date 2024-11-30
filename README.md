@@ -36,7 +36,7 @@
 
 <div id="headerStatistics_Graph3D" align="center">
   <td colspan="2" align="center">
-    <img src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output/metrics.plugin.isocalendar.fullyear.svg" alt=""></img>
+    <img src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output_Graph3D/metrics.plugin.isocalendar.fullyear.svg" alt=""></img>
   </td>
 </div>
 
