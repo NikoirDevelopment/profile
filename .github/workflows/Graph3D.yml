@@ -18,7 +18,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+      - uses: lowlighter/metrics@latest
         with:
           target_branch: output_Graph3D
           build_dir: dist
