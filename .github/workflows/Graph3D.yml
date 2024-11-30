@@ -21,4 +21,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           target_branch: output_Graph3D
-          token: ${{ secrets.METRICS_TOKEN }}
+          build_dir: dist
+          commit_message: Update Graph3D
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
