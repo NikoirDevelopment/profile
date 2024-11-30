@@ -4,8 +4,10 @@ on:
   schedule: [{cron: "0 0 * * *"}]
   # Ручной запуск
   workflow_dispatch:
-  # Запуск при переходи на ветки
-  push: {branches: ["main"]}
+  # Команда запуска действия, когда выбираем ветку main.
+  push:
+    branches:
+    - main
 
 # Выполнение кода  
 jobs:
