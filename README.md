@@ -31,7 +31,11 @@
 ----------
 
 <div id="headerStatistics" align="center">
-  <h4>📊 My main statistics 📊</h4>
+  <h4>📊 My statistics 📊</h4>
+</div>
+
+<div id="headerStatistics" align="center">
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output/github-contribution-grid-snake.svg" />
 </div>
 
 <div id="headerIndepthAnalysis_CloneAndAnalyzeRepositories">
