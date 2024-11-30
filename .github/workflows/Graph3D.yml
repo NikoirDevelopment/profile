@@ -18,7 +18,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: nikoirdevelopment/nikoirdevelopment@output_graph3D
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output_Graph3D
           build_dir: dist
