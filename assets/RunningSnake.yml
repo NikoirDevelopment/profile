@@ -1,32 +1,34 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
+# Действие на GitHub для создания графика пожирающей змейки.
 name: Generate Snake
 
-# Controls when the action will run.
+# Период автоматического запуска действие в GitHUB.
 on:
   schedule:
-      # every 12 hours
+      # Каждые 12 часов
     - cron: "0 */12 * * *"
 
-  # This command allows us to run the Action automatically from the Actions tab.
+  # Команда позволяет автоматически запустить активность.
   workflow_dispatch:
   
-  # Also run on every push on the master branch
+  # Команда запуска действия, когда выбираем ветку main.
   push:
     branches:
     - main
 
-# The sequence of runs in this workflow:
+# Последовательность запуска действий:
 jobs:
-  # This workflow contains a single job called "build"
+  # Сборка:
   build:
-    # The type of runner that the job will run on
+    # Тип устройства, на котором будет выполняться сборка
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Шаги в котором постепенно выполняется действии 
     steps:
+      # Копирование нашего репозитория кода
       - name: Clone repo
         uses: actions/checkout@v3
-    
+
+      # Копирование оригинального репозитория кода
       - name: Generate the snake files in './dist/'
         uses: Platane/snk@v3
         id: snake-gif
@@ -39,9 +41,11 @@ jobs:
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Создание вывода статуса о сборке
       - name: Show build status
         run: git status
 
+      # Перемещение сборки в карту вывода
       - name: Push new files to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
