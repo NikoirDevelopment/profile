@@ -9,7 +9,7 @@
 ----------
 
 <div id="TitleIcons" align="center">
-  <h3>📝My skills📋</h3>
+  <h3>📝 My skills📋 </h3>
 </div>
 
 <div id="IconsDevelopmentApp" align="center" margin="10px">
@@ -40,27 +40,33 @@
   </div>
 </div>
 
---------
+----------
 
 <div id="TitleStat" align="center">
-  <h3>📊My statistics📊</h3>
+  <h3>📊 My statistics 📊</h3>
 </div>
 
 <div id="Stat" align="center">
     <img 
-      src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NikoirDevelopment&theme=vue" 
+      src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NikoirDevelopment&theme=nightowl" 
       alt="">
     </img>
     <img 
-      src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NikoirDevelopment&theme=vue" 
+      src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NikoirDevelopment&theme=nightowl" 
       alt=""
       height="205px">
     </img>
      <img 
-       src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=NikoirDevelopment&theme=vue" 
+       src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=NikoirDevelopment&theme=nightowl" 
        alt=""
        height="205px">
     </img>
 </div>
 
---------
+<div></div>
+
+----------
+
+<div id="TitleStat" align="center">
+  <h3>📚 Other 📚</h3>
+</div>
