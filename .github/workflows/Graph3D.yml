@@ -1,11 +1,15 @@
 name: Graph3D
 on:
-  # Schedule daily updates
+  # Автозапуск
   schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  # Ручной запуск
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["main"]}
+  # Команда запуска действия, когда выбираем ветку main.
+  push:
+    branches:
+    - main
+
+# Выполнение кода  
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -14,7 +18,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: nikoirdevelopment/nikoirdevelopment@output_Graph3D
         with:
           target_branch: output_Graph3D
-          token: ${{ secrets.METRICS_TOKEN }}
+          build_dir: dist
+          commit_message: Update Graph3D
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
