@@ -45,11 +45,11 @@ jobs:
       - name: Show build status
         run: git status
 
-      # Перемещение сборки в ветку output вывода
+      # Перемещение сборки в ветку output_SnakeAnimation вывода
       - name: Push new files to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
+          target_branch: output_SnakeAnimation
           build_dir: dist
           commit_message: Update snake animations
         env:
