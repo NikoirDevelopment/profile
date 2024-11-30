@@ -3,5 +3,5 @@
 </div>
 
 <div id="CenterStatistics_Contributions" align="center">
-  ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NikoirDevelopment&theme=vue)
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NikoirDevelopment&theme=vue" alt="GitHub Profile Details" />
 </div>
