@@ -18,7 +18,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: nikoirdevelopment/nikoirdevelopment@output_Graph3D
+      - uses: nikoirdevelopment/nikoirdevelopment@output_graph3D
         with:
           target_branch: output_Graph3D
           build_dir: dist
