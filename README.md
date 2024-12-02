@@ -21,7 +21,7 @@
 </div>
 
 <div id="headerSkills_Icon2" align="center">
-  <img src="https://skillicons.dev/icons?i=visualstudio,vscode,godot,github,ps,ai,pr,ae,xd,blender"/>
+  <img src="https://skillicons.dev/icons?i=visualstudio,vscode,godot,ps,ai,pr,ae,xd,blender"/>
 </div>
 
 <div id="headerSkills_Icon3" align="center">
