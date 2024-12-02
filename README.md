@@ -34,31 +34,6 @@
   <h4>📊 My statistics 📊</h4>
 </div>
 
-<div id="headerStatistics_Graph3D" align="center">
-  <td colspan="2" align="center">
-    <img src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output_Graph3D/metrics.plugin.isocalendar.fullyear.svg" alt=""></img>
-  </td>
-</div>
-
-
-
-
-
-
-<div id="headerStatistics_IndepthAnalysis_CloneAndAnalyzeRepositories" align="center">
-  <p>Indepth analysis (clone and analyze repositories)</p>
-    <div>
-      <td 
-        colspan="2" 
-        align="center">
-        <img
-          src="https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.languages.indepth.svg" 
-          alt="">
-        </img>
-      </td>
-    </div>
-</div>
-
 <div id="headerStatistics_SnakeAnimation" align="center">
   <img src="https://raw.githubusercontent.com/nikoirdevelopment/nikoirdevelopment/output_SnakeAnimation/github-contribution-grid-snake.svg"/>
 </div>
