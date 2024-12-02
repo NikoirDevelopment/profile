@@ -25,7 +25,7 @@
 </div>
 
 <div id="headerSkills_Icon3" align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,py,html,css,sass,md,postgres,ms,mysql,sqlite"/>
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,py,html,css,sass,md,postgres,mysql,sqlite"/>
 </div>
 
 ----------
