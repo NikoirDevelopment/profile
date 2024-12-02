@@ -45,7 +45,7 @@
 
 
 
-<div id="headerIndepthAnalysis_CloneAndAnalyzeRepositories" align="center">
+<div id="headerStatistics_IndepthAnalysis_CloneAndAnalyzeRepositories" align="center">
   <p>Indepth analysis (clone and analyze repositories)</p>
     <div>
       <td 
